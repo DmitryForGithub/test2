@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/JustTestForQt">
-        <file>my.png</file>
-    </qresource>
-</RCC>
