@@ -64,7 +64,7 @@ void JustTestForQt::Init()
 	ui.lcdNumber_3->setDigitCount(12);
 	ui.lcdNumber_3->display(str);
 	
-	for (int i = 0; i < 6; i++)
+	for (int i = 0; i <=ui.menu->actions().size(); i++)
 	{
 		ui.tabWidget->setTabEnabled(i, false);
 	}
@@ -75,6 +75,7 @@ void JustTestForQt::Init()
 	{
 		ui.menu->actions().at(4)->setVisible(false);
 	}
+	
 }
 void JustTestForQt::on_timer_timeout()
 {
@@ -440,5 +441,4 @@ void JustTestForQt::trigerMenu(QAction *act)
 		ui.tabWidget->setCurrentIndex(5);
 	}
 	ui.tabWidget->setStyleSheet("QTabBar::tab:disabled {width: 0; color: transparent;}");
-	
 }
