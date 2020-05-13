@@ -441,4 +441,8 @@ void JustTestForQt::trigerMenu(QAction *act)
 	}
 	ui.tabWidget->setStyleSheet("QTabBar::tab:disabled {width: 0; color: transparent;}");
 	
+
+
+
+
 }
